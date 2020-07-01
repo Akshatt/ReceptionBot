@@ -1,3 +1,31 @@
+## intent:book_room
+- I would like to book a room
+- book a room
+- I want to book a room
+- Are there any rooms available
+- I want to book a room for my stay
+
+
+## intent:number_of_rooms
+- [Single](number)
+- [two](number)
+- I'd like to book a [single](number) room 
+- [One](number)
+- [1](number)
+- I'd like to book [two](number) rooms
+- [2](number)
+- I want to book [3](number) rooms
+
+
+## intent:type_of_room
+- [Simple](room_type)
+- [Deluxe](room_type)
+- I want [simple](room_type) rooms
+- I'd like [deluxe](room_type) rooms
+- [simple](room_type) rooms
+- [deluxe](room_type) room
+
+
 ## intent:greet
 - hey
 - hello
@@ -26,28 +54,7 @@
 - don't like that
 - no way
 - not really
-
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+- Nope
 
 ## intent:bot_challenge
 - are you a bot?

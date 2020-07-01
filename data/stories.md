@@ -1,26 +1,38 @@
-## happy path
+## book room path1  
 * greet
   - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
 * affirm
-  - utter_happy
+    - utter_happy
+    - utter_goodbye
 
-## sad path 2
+## book room path2  
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+
+## book room path3  
 * greet
   - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+* book_room
+    - room_form
+    - form{"name": "room_form"}
 * deny
-  - utter_goodbye
+    - utter_again
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
 
 ## say goodbye
 * goodbye

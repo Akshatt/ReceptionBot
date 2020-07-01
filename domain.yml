@@ -1,28 +1,45 @@
 intents:
+  - book_room
+  - number_of_rooms
+  - type_of_room
   - greet
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
+
+entities:
+  - number
+  - room_type
+
+slots:
+  number:
+    type: unfeaturized
+  room_type:
+    type: unfeaturized
+
+
+forms:
+  - room_form
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey there! How can I help you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_ask_number:
+    - text: "Alright!\nHow many rooms would you like to book?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_ask_room_type:
+    - text: "What type of room would you like to stay in?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "That's great!"
+
+  utter_again:
+    - text: "No problem! Lets start over\n"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Okay bye!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
