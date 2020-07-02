@@ -1,10 +1,11 @@
 ## intent:book_room
+- Book rooms
+- Help me book a room
 - I would like to book a room
 - book a room
 - I want to book a room
 - Are there any rooms available
 - I want to book a room for my stay
-
 
 ## intent:number_of_rooms
 - [Single](number)
@@ -25,6 +26,14 @@
 - [simple](room_type) rooms
 - [deluxe](room_type) room
 
+
+## intent: ask_whatspossible
+- What can you do
+- What services do you provide
+- How can you help me
+- What do you do
+- Your services
+- Your functions
 
 ## intent:greet
 - hey
@@ -55,9 +64,5 @@
 - no way
 - not really
 - Nope
-
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
+- Nevermind
+- Nothing
