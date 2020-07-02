@@ -7,26 +7,33 @@ intents:
   - affirm
   - deny
   - ask_whatspossible
+  - schedule_cleaning
+  - cleaning_time
 
 entities:
   - number
   - room_type
+  - time
 
 slots:
   number:
     type: unfeaturized
   room_type:
     type: unfeaturized
+  time:
+    type: unfeaturized
+
 
 actions:
   - action_reset_slot
 
 forms:
   - room_form
+  - room_cleaning_form
 
 responses:
   utter_greet:
-  - text: "Hey there! How can I help you?"
+  - text: "Hey there! You have reached the ReceptionBot.\nHow may I help you?"
 
   utter_ask_number:
     - text: "Alright!\nHow many rooms would you like to book?"
@@ -39,8 +46,20 @@ responses:
         - title: "Deluxe"
           payload: '/type_of_room{"room_type": "Deluxe"}'
 
+  utter_ask_time:
+    - text: "Alright!\nWhen should I arrange for a cleaning?"
+      buttons:
+        - title: "Right Away"
+          payload: '/cleaning_time{"time": "Right Away"}'
+        - title: "In an hour"
+          payload: '/cleaning_time{"time": "in an hour"}'
+        - title: "In 2 hours"
+          payload: '/cleaning_time{"time": "in 2 hours"}'
+        - title: "Later"
+          payload: '/cleaning_time{"time": "Later"}'
+
   utter_explain_whatspossible:
-    - text: "I can help you book a room, schedule room cleaning and handle FAQs"
+    - text: "I can help you book a room, schedule room cleaning and handle some FAQs"
 
   utter_happy:
   - text: "That's great!"

@@ -1,3 +1,29 @@
+## intent: schedule_cleaning 
+- Clean my room [now](time)
+- room cleaning [right now](time)
+- Send someone to clean my room [right now](time)
+- Can i have my room cleaned [in an hour](time)
+- Room cleaning service [right now](time)
+- Can you send someone to clean my room [in an hour](time) 
+- Clean my room
+- room cleaning
+- Send someone to clean my room
+- I want to have my room cleaned
+- Can i have my room cleaned 
+- Room cleaning service
+- Can you send someone to clean my room 
+
+## intent: cleaning_time
+- [Right now](time)
+- I want it cleaned [now](time)
+- [In an hour](time)
+- [After an hour](time)
+- [After 2 hours](time)
+- I want room cleaning [in an hour](time)  
+- Could you send someone [right now](time)
+- Could you send someone [after 2 hours](time)
+- Can you send someone [in an hours](time)
+
 ## intent:book_room
 - Book rooms
 - Help me book a room
@@ -55,6 +81,7 @@
 - of course
 - that sounds good
 - correct
+- Okay
 
 ## intent:deny
 - no

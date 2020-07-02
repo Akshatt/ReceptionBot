@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e98ef9b-a741-4c98-83b9-5ffb520e301e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/starter-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter-code.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/20200702-205307.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200702-114128.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200702-120048.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200702-122746.tar.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="444" y="130" key="#Web_Browsers" timestamp="1593694874457">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1593694874457" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1593669381928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

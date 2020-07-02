@@ -14,21 +14,6 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
 from rasa_sdk.events import SlotSet
 
-'''
-class ActionHelloWorld(Action):
-
-    def name(self) -> Text:
-        return "action_hello_world"
-
-    def run(self, dispatcher: CollectingDispatcher,
-             tracker: Tracker,
-             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-         dispatcher.utter_message(text="Hello World!")
-
-         return []
-'''
-
 
 class RoomForm(FormAction):
     """Collects number and type of room"""
@@ -58,6 +43,36 @@ class RoomForm(FormAction):
         # pluralize if rooms are more than one
         if number not in ["1", "One", "single", "Single", "one"]:
             msg += "s"
+        dispatcher.utter_message(msg)
+        return []
+
+
+class RoomCleaningForm(FormAction):
+    """Schedules time for room cleaning"""
+
+    def name(self):
+        return "room_cleaning_form"
+
+    @staticmethod
+    def required_slots(tracker):
+        return [
+                "time",
+            ]
+
+    def submit(
+            self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any],
+        ) -> List[Dict]:
+
+        time = tracker.get_slot("time")
+        if time == "Right Away":
+            msg = "Sure, I will send someone right away"
+        elif time == "Later":
+            msg = "Sure, You can reach out to me whenever you want us to clean the room!"
+        else:
+            msg = "Sure, I have scheduled a cleaning " + time
         dispatcher.utter_message(msg)
         return []
 
