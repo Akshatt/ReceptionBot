@@ -74,6 +74,44 @@
  - utter_happy
  - utter_goodbye
  - action_reset_slot
+ 
+## faqs
+* faq
+ - utter_faq
+ - utter_faq_options
+
+## faq check in
+* faq_checkin
+ - utter_checkin_timings
+
+## faq check out
+* faq_checkout
+ - utter_checkout_timings
+ 
+## faq cancel reservations
+* faq_cancel_reservation
+ - utter_cancel_reservation
+
+## faq cancellation policy
+* faq_cancellation_policy
+ - utter_cancellation_policy
+ 
+## faq restaurant
+* faq_restaurant
+ - utter_restaurant
+ 
+## faq restaurant timings
+* faq_restaurant_timings
+ - utter_restaurant_timings
+ 
+## faq breakfast
+* faq_breakfast
+ - utter_breakfast
+
+## faq breakfast timings
+* faq_breakfast_timings
+ - utter_breakfast_timings
+  
 
 ## say goodbye
 * goodbye
