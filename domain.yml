@@ -18,6 +18,7 @@ intents:
   - faq_breakfast
   - faq_breakfast_timings
   - faq
+  - bot_challenge
 
 entities:
   - number
@@ -27,13 +28,13 @@ entities:
 slots:
   number:
     type: unfeaturized
+    auto_fill: false
   room_type:
     type: unfeaturized
+    auto_fill: false
   time:
     type: unfeaturized
-
-actions:
-  - action_reset_slot
+    auto_fill: false
 
 forms:
   - room_form
@@ -127,13 +128,16 @@ responses:
     - text: "I can help you book a room, schedule room cleaning and handle some FAQs"
 
   utter_happy:
-  - text: "That's great!"
+    - text: "That's great!"
 
   utter_again:
     - text: "No problem! Lets start over\n"
 
   utter_goodbye:
-  - text: "Okay bye!"
+    - text: "Okay bye!"
+
+  utter_default:
+    - text: "This seems out of scope for me!\nTry asking something else like book a room, clean my room, faqs, etc"
 
 session_config:
   session_expiration_time: 60

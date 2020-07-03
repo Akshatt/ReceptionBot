@@ -12,7 +12,6 @@
 * affirm
     - utter_happy
     - utter_goodbye
-    - action_reset_slot
 
 ## book room path2  
 * book_room
@@ -22,7 +21,6 @@
 * affirm
     - utter_happy
     - utter_goodbye
-    - action_reset_slot
 
 ## book room path3  
 * greet
@@ -33,14 +31,12 @@
     - form{"name": null}
 * deny
     - utter_again
-    - action_reset_slot
     - room_form
     - form{"name": "room_form"}
     - form{"name": null}
 * affirm
     - utter_happy
     - utter_goodbye
-    - action_reset_slot
     
 ## Not booking
 * greet
@@ -59,7 +55,6 @@
 * affirm
  - utter_happy
  - utter_goodbye
- - action_reset_slot
 
 ## schedule cleaning path2 
 * greet
@@ -73,7 +68,6 @@
 * affirm
  - utter_happy
  - utter_goodbye
- - action_reset_slot
  
 ## faqs
 * faq
@@ -125,3 +119,6 @@
 * ask_whatspossible
   - utter_explain_whatspossible
 
+## fallback story
+* bot_challenge
+    - action_default_fallback

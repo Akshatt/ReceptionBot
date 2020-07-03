@@ -187,3 +187,9 @@
 - Nope
 - Nevermind
 - Nothing
+
+## intent: bot_challenge
+- are you a human?
+- are you a bot?
+- What is a bot? 
+- What are you?

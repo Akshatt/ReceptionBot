@@ -44,7 +44,7 @@ class RoomForm(FormAction):
         if number not in ["1", "One", "single", "Single", "one"]:
             msg += "s"
         dispatcher.utter_message(msg)
-        return []
+        return [SlotSet("number", None), SlotSet("room_type", None)]
 
 
 class RoomCleaningForm(FormAction):
@@ -58,6 +58,15 @@ class RoomCleaningForm(FormAction):
         return [
                 "time",
             ]
+
+    def slot_mappings(self):
+        """A dictionary to map required slots to
+            - an extracted entity
+            - intent: value pairs
+            - a whole message
+            or a list of them, where a first match will be picked"""
+
+        return {"time": self.from_entity(entity="time", intent=["schedule_cleaning", "cleaning_time"])}
 
     def submit(
             self,
@@ -74,13 +83,4 @@ class RoomCleaningForm(FormAction):
         else:
             msg = "Sure, I have scheduled a cleaning " + time
         dispatcher.utter_message(msg)
-        return []
-
-
-class ResetSlot(Action):
-
-    def name(self):
-        return "action_reset_slot"
-
-    def run(self, dispatcher, tracker, domain):
-        return [SlotSet("number", None), SlotSet("room_type", None)]
+        return [SlotSet("time", None)]
