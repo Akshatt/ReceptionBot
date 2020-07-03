@@ -4,9 +4,7 @@
     <list default="true" id="8e98ef9b-a741-4c98-83b9-5ffb520e301e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +46,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1593694874457" />
+    <state x="411" y="142" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593784038379">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="411" y="142" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1593784038379" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1593669381928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

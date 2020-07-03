@@ -1,12 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
@@ -23,10 +14,25 @@ class RoomForm(FormAction):
 
     @staticmethod
     def required_slots(tracker):
-        return [
+        people = tracker.get_slot("people")
+        if people in ["1", "One", "single", "Single", "one", "2", "Two", "two"]:
+            return [
+                "room_type",
+            ]
+        else:
+            return [
                 "number",
                 "room_type",
             ]
+
+    def slot_mappings(self):
+        """A dictionary to map required slots to
+            - an extracted entity
+            - intent: value pairs
+            - a whole message
+            or a list of them, where a first match will be picked"""
+
+        return {"people": self.from_entity(entity="people", intent="book_room")}
 
     def submit(
             self,
@@ -35,7 +41,11 @@ class RoomForm(FormAction):
             domain: Dict[Text, Any],
         ) -> List[Dict]:
 
-        number = tracker.get_slot("number")
+        people = tracker.get_slot("people")
+        if people in ["1", "One", "single", "Single", "one", "2", "Two", "two"]:
+            number = "1"
+        else:
+            number = tracker.get_slot("number")
         room_type = tracker.get_slot("room_type")
 
         msg = "Okay, we got it!\nPlease confirm:\nYou would like to book " + number + " " + room_type + " " + "room"
@@ -44,7 +54,7 @@ class RoomForm(FormAction):
         if number not in ["1", "One", "single", "Single", "one"]:
             msg += "s"
         dispatcher.utter_message(msg)
-        return [SlotSet("number", None), SlotSet("room_type", None)]
+        return [SlotSet("number", None), SlotSet("room_type", None), SlotSet("people", None)]
 
 
 class RoomCleaningForm(FormAction):

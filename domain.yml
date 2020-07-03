@@ -24,6 +24,7 @@ entities:
   - number
   - room_type
   - time
+  - people
 
 slots:
   number:
@@ -35,6 +36,8 @@ slots:
   time:
     type: unfeaturized
     auto_fill: false
+  people:
+    type: unfeaturized
 
 forms:
   - room_form

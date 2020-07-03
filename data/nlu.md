@@ -32,6 +32,13 @@
 - I want to book a room
 - Are there any rooms available
 - I want to book a room for my stay
+- Book room for [2](people) people
+- Help me book a room for [2](people)   
+- I would like to book a room for [two](people) people
+- book a room for [1](people) 
+- I want to book a room for [two](people) people
+- Are there any rooms available for [2](people) people
+- I want to book a room for [2](people) people 
 
 ## intent:number_of_rooms
 - [Single](number)
