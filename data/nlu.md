@@ -1,10 +1,18 @@
 ## intent: schedule_cleaning 
-- Clean my room [now](time)
-- room cleaning [right now](time)
-- Send someone to clean my room [right now](time)
-- Can i have my room cleaned [in an hour](time)
-- Room cleaning service [right now](time)
-- Can you send someone to clean my room [in an hour](time) 
+- Clean my room [now](time:right now)
+- room cleaning [right now](time:right now)
+- room cleaning [in 2 hours](time)
+- Send someone to clean my room [right now](time:right now)
+- Send someone to clean my room [in an hour](time)
+- Can i have my room cleaned [in 2 hours](time)
+- Can i have my room cleaned [after 2 hours](time)
+- Can i have my room cleaned [right now](time:right now)
+- Room cleaning service [right now](time:right now)
+- Can you send someone to clean my room [in an hour](time)
+- Can you send someone to clean my room [in 2 hours](time)
+- Can you send someone to clean my room [right now](time:right now)
+- have my room cleaned [in 2 hours](time) 
+- have my room cleaned 
 - Clean my room
 - room cleaning
 - Send someone to clean my room
@@ -14,13 +22,13 @@
 - Can you send someone to clean my room 
 
 ## intent: cleaning_time
-- [Right now](time)
-- I want it cleaned [now](time)
+- [Right now](time:right now)
+- I want it cleaned [now](time:right now)
 - [In an hour](time)
 - [After an hour](time)
 - [After 2 hours](time)
 - I want room cleaning [in an hour](time)  
-- Could you send someone [right now](time)
+- Could you send someone [right now](time:right now)
 - Could you send someone [after 2 hours](time)
 - Can you send someone [in an hours](time)
 

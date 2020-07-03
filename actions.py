@@ -86,7 +86,7 @@ class RoomCleaningForm(FormAction):
         ) -> List[Dict]:
 
         time = tracker.get_slot("time")
-        if time == "Right Away":
+        if time == "right now":
             msg = "Sure, I will send someone right away"
         elif time == "Later":
             msg = "Sure, You can reach out to me whenever you want us to clean the room!"

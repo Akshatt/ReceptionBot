@@ -35,7 +35,6 @@ slots:
     auto_fill: false
   time:
     type: unfeaturized
-    auto_fill: false
   people:
     type: unfeaturized
 
@@ -62,7 +61,7 @@ responses:
     - text: "Alright!\nWhen should I arrange for a cleaning?"
       buttons:
         - title: "Right Away"
-          payload: '/cleaning_time{"time": "Right Away"}'
+          payload: '/cleaning_time{"time": "right now"}'
         - title: "In an hour"
           payload: '/cleaning_time{"time": "in an hour"}'
         - title: "In 2 hours"
