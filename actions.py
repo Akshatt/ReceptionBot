@@ -28,7 +28,9 @@ class RoomForm(FormAction):
     def slot_mappings(self):
         return {
             "people": self.from_entity(entity="people",
-                                       intent="book_room")
+                                       intent="book_room"),
+            "number": self.from_entity(entity="number",
+                                       intent=["book_room", "number_of_rooms"])
         }
 
     def submit(

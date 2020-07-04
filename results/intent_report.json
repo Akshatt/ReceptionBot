@@ -1,78 +1,103 @@
 {
-  "affirm": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "mood_great": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
   "bot_challenge": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "book_room": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "mood_unhappy": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
+    "support": 6,
     "confused_with": {}
   },
   "deny": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 6,
+    "support": 11,
     "confused_with": {}
   },
-  "number_of_rooms": {
+  "affirm": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 3,
+    "support": 13,
     "confused_with": {}
+  },
+  "number_of_rooms": {
+    "precision": 0.875,
+    "recall": 0.875,
+    "f1-score": 0.875,
+    "support": 8,
+    "confused_with": {
+      "book_room": 1
+    }
   },
   "goodbye": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 4,
+    "support": 9,
     "confused_with": {}
   },
   "greet": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "what_faqs": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "schedule_cleaning": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 29,
+    "confused_with": {}
+  },
+  "book_room": {
+    "precision": 0.9642857142857143,
+    "recall": 0.9642857142857143,
+    "f1-score": 0.9642857142857143,
+    "support": 28,
+    "confused_with": {
+      "number_of_rooms": 1
+    }
+  },
+  "type_of_room": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
     "support": 6,
     "confused_with": {}
   },
-  "accuracy": 1.0,
-  "macro avg": {
+  "cleaning_time": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 51
+    "support": 10,
+    "confused_with": {}
+  },
+  "faq": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 80,
+    "confused_with": {}
+  },
+  "accuracy": 0.9908256880733946,
+  "macro avg": {
+    "precision": 0.9866071428571428,
+    "recall": 0.9866071428571428,
+    "f1-score": 0.9866071428571428,
+    "support": 218
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 51
+    "precision": 0.9908256880733946,
+    "recall": 0.9908256880733946,
+    "f1-score": 0.9908256880733946,
+    "support": 218
   }
 }

@@ -5,8 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/DIETClassifier_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/DIETClassifier_report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/confmat.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/confmat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/intent_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/intent_report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/story_confmat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results/story_confmat.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

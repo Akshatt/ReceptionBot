@@ -45,20 +45,32 @@
 - Book rooms
 - Help me book a room
 - I would like to book a room
+- Book me a room
 - book a room
 - I want to book a room
-- Book me a room
-- Book me a room for [2](people) people 
 - Are there any rooms available
 - I want to book a room for my stay
+- Book [2](number) rooms
+- Help me book [2](number) rooms
+- I would like to book [one](number:1) room
+- I would like to book [2](number) rooms
+- I'd like to book [two](number:2) rooms
+- I want to book [2](number) rooms
+- Book me [2](number) rooms
+- I want to book [3](number) rooms 
 - Book room for [2](people) people
-- Help me book a room for [2](people)   
+- Book room for [1](people) 
+- Help me book a room for [2](people)
+- Help me book a room for [2](people) people   
 - I would like to book a room for [two](people) people
 - book a room for [1](people)
 - book a room for [one](people) 
 - I want to book a room for [two](people) people
+- I want to book a room for [two](people) 
 - Are there any rooms available for [2](people) people
 - I want to book a room for [2](people) people 
+- Book me a room for [2](people) people
+
 
 ## intent:number_of_rooms
 - [Single](number)
@@ -66,7 +78,7 @@
 - I'd like to book a [single](number) room 
 - [One](number)
 - [1](number)
-- I'd like to book [two](number) rooms
+- I'd like to book [two](number:2) rooms
 - [2](number)
 - I want to book [3](number) rooms
 
@@ -144,7 +156,6 @@
 - Can you specify the timings of your restaurant?
 - Is the restaurant open now?
 - Is the restaurant open all the time?
-- Is the restaurant open 24 hours?
 - Restaurant time
 - Restaurant timings
 
