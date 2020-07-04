@@ -1,8 +1,10 @@
 ## intent: schedule_cleaning 
 - Clean my room [now](time:right now)
 - Clean my room [in an hour](time)
+- Clean my room [after 2 hours](time)
 - room cleaning [right now](time:right now)
 - room cleaning [in 2 hours](time)
+- room cleaning [after an hour](time)
 - Send someone to clean my room [right now](time:right now)
 - Send someone to clean my room [in an hour](time)
 - Can i have my room cleaned [in 2 hours](time)
@@ -12,7 +14,12 @@
 - Can you send someone to clean my room [in an hour](time)
 - Can you send someone to clean my room [in 2 hours](time)
 - Can you send someone to clean my room [right now](time:right now)
+- Can you send someone [now](time:right now)
+- Can you send someone [right away](time:right now)
 - have my room cleaned [in 2 hours](time) 
+- I want to have my room cleaned [in an hour](time)
+- I want to have my room cleaned [now](time:right now)
+- I want to have my room cleaned [after an hour](time)
 - have my room cleaned 
 - Clean my room
 - room cleaning
@@ -32,6 +39,7 @@
 - Could you send someone [right now](time:right now)
 - Could you send someone [after 2 hours](time)
 - Can you send someone [in an hours](time)
+- Can you send someone [right now](time:right now)
 
 ## intent:book_room
 - Book rooms
@@ -94,6 +102,8 @@
 - When can i check-out?
 - What are your check-out timings?
 - Check out
+- I want to know the check-out timings
+- Check-out timings?
 
 ## intent: faq/cancel_reservation
 - How do I cancel a reservation?

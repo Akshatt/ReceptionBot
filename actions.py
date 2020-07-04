@@ -87,7 +87,7 @@ class RoomCleaningForm(FormAction):
 
         time = tracker.get_slot("time")
         if time == "right now":
-            msg = "Sure, I will send someone right away"
+            msg = "Sure, I will send someone to your room right away"
         elif time == "Later":
             msg = "Sure, You can reach out to me whenever you want us to clean the room!"
         else:
