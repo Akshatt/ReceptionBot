@@ -6,19 +6,14 @@ intents:
   - goodbye
   - affirm
   - deny
-  - ask_whatspossible
   - schedule_cleaning
   - cleaning_time
-  - faq_checkin
-  - faq_checkout
-  - faq_cancel_reservation
-  - faq_cancellation_policy
-  - faq_restaurant
-  - faq_restaurant_timings
-  - faq_breakfast
-  - faq_breakfast_timings
   - faq
   - bot_challenge
+  - what_faqs
+
+actions:
+  - respond_faq
 
 entities:
   - number
@@ -70,76 +65,46 @@ responses:
           payload: '/cleaning_time{"time": "Later"}'
 
   utter_faq:
-    - text: "These are some of the FAQs."
+    - text: "These are some of the faqs."
   utter_faq_options:
     - text: "You can click on any of the following to know more about them."
       buttons:
         - title: "Check-In Timings"
-          payload: '/faq_checkin'
+          payload: 'Check in'
         - title: "Check-Out Timings"
-          payload: '/faq_checkout'
+          payload: 'Check out'
 
         - title: "Cancel Reservation"
-          payload: '/faq_cancel_reservation'
+          payload: 'Cancel reservation'
         - title: "Cancellation Policy"
-          payload: '/faq_cancellation_policy'
+          payload: 'Cancellation policy'
 
         - title: "Restaurant Availability"
-          payload: '/faq_restaurant'
+          payload: 'Do you have a restaurant?'
         - title: "Restaurant Timings"
-          payload: '/faq_restaurant_timings'
+          payload: 'Restaurant time'
 
         - title: "Breakfast Availability"
-          payload: '/faq_breakfast'
+          payload: 'Do you offer breakfast?'
         - title: "Breakfast Timings"
-          payload: '/faq_breakfast_timings'
+          payload: 'Breakfast time'
 
-        - title: "Thank you, Im done."
+        - title: "What can you do?"
+          payload: 'What can you do'
+        - title: "No thanks, Im done."
           payload: '/goodbye'
-
-
-  utter_checkin_timings:
-    - text: "Check-in time starts at 4 PM.\nMinimum check-in age is 21.\nPlease contact the reception for early check-in requests."
-
-  utter_checkout_timings:
-    - text: "Check-out time is 11 AM.\nPlease contact the reception for late checkout requests."
-
-  utter_cancel_reservation:
-    - text: "To cancel a reservation, select the 'Reservations' link from the homepage.\nOn the Reservations page, under
-              the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last
-              name on the reservation or the last four digits of the credit card used to make the reservation."
-
-  utter_cancellation_policy:
-    - text: "The booking deposit is refundable if the cancellation occurs at least 15 days before arrival.\nFor
-              cancellations made after this limit, a penalty will be imposed based on the cancellation policy."
-
-  utter_restaurant:
-    - text: "Yes, the hotel has a restaurant called the Zephyr Bar. With our menu we strive to reflect the historic art
-              and the spirit of our neighborhood by offering a glimpse into what makes our area unique."
-
-  utter_restaurant_timings:
-    - text: "Our restaurant serves a dazzling 24-hour menu. You can order whenever you want to!"
-
-  utter_breakfast:
-    - text: "The hotel provides its guests with a free made-to-order breakfast each morning."
-
-  utter_breakfast_timings:
-    - text: "Monday through Friday breakfast is 6 am to 9 am. On Saturday and Sunday, we are open from 7 am to 10:30 am."
-
-  utter_explain_whatspossible:
-    - text: "I can help you book a room, schedule room cleaning and handle some FAQs"
 
   utter_happy:
     - text: "That's great!"
 
   utter_again:
-    - text: "No problem! Lets start over\n"
+    - text: "No problem! Do you want to start over?"
 
   utter_goodbye:
     - text: "Okay bye!"
 
   utter_default:
-    - text: "This seems out of scope for me!\nTry asking something else like book a room, clean my room, faqs, etc"
+    - text: "This seems out of scope for me now!\nTry asking something else like book a room, clean my room, faqs, etc"
 
 session_config:
   session_expiration_time: 60

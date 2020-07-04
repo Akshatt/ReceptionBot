@@ -1,5 +1,6 @@
 ## intent: schedule_cleaning 
 - Clean my room [now](time:right now)
+- Clean my room [in an hour](time)
 - room cleaning [right now](time:right now)
 - room cleaning [in 2 hours](time)
 - Send someone to clean my room [right now](time:right now)
@@ -38,6 +39,8 @@
 - I would like to book a room
 - book a room
 - I want to book a room
+- Book me a room
+- Book me a room for [2](people) people 
 - Are there any rooms available
 - I want to book a room for my stay
 - Book room for [2](people) people
@@ -68,7 +71,7 @@
 - [deluxe](room_type) room
 
 
-## intent: faq_checkin
+## intent: faq/checkin
 - what is the check-in time?
 - what is the checkin time?
 - At what time can I check-in?
@@ -77,8 +80,11 @@
 - What is the standard check-in time?
 - When can i check-in?
 - What are your check-in timings?
+- Check in 
+- I want to know the check-in timings
+- Check-in timings?
 
-## intent: faq_checkout
+## intent: faq/checkout
 - what is the check-out time?
 - what is the checkout time?
 - At what time can I check-out?
@@ -87,8 +93,9 @@
 - What is the standard check-out time?
 - When can i check-out?
 - What are your check-out timings?
+- Check out
 
-## intent: faq_cancel_reservation
+## intent: faq/cancel_reservation
 - How do I cancel a reservation?
 - How do I cancel my reservation?
 - I want to cancel my reservation
@@ -96,7 +103,7 @@
 - Cancel reservation
 - Cancel my reservation
 
-## intent: faq_cancellation_policy
+## intent: faq/cancellation_policy
 - What is your cancellation policy?
 - Cancellation policy
 - How do you handle cancellation?
@@ -105,7 +112,7 @@
 - I want to enquire about your cancellation policy
 - Enquiry about your cancellation policy
 
-## intent: faq_restaurant
+## intent: faq/restaurant
 - Does the hotel have a restaurant?
 - Is there a restaurant in your hotel?
 - Do you have a restaurant inside your hotel?
@@ -114,7 +121,7 @@
 - Do you provide restaurant services?
 - I want to ask if you have a restaurant in your hotel? 
 
-## intent: faq_restaurant_timings
+## intent: faq/restaurant_timings
 - What are the timings of your restaurant?
 - Your restaurant is open till what time?
 - at what time is your restaurant open?
@@ -128,7 +135,7 @@
 - Restaurant time
 - Restaurant timings
 
-## intent: faq_breakfast
+## intent: faq/breakfast
 - Does the hotel offer breakfast?
 - Do you offer breakfast?
 - Do you provide breakfast services?
@@ -138,7 +145,7 @@
 - Breakfast availability
 - Is breakfast available?
 
-## intent: faq_breakfast_timings
+## intent: faq/breakfast_timings
 - What are the breakfast timings?
 - Breakfast is offered till what time?
 - Till what time is breakfast available?
@@ -152,17 +159,18 @@
 - Breakfast timings
 
 
-## intent: faq 
-- Faq
+## intent: what_faqs 
+- Faqs
 - FAQ
 - faq
 - What are the FAQ you can answer?
 - What are the FAQs you can answer?
 - What FAQ can you answer?
 - What FAQs can you answer?
+- What faqs can you handle?
 - List your faqs
 
-## intent: ask_whatspossible
+## intent: faq/ask_whatspossible
 - What can you do
 - What services do you provide
 - How can you help me
@@ -177,12 +185,18 @@
 - good morning
 - good evening
 - hey there
+- Hie
+- Yo
+- Heyy
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- Talk to you later
+- later
+- Ciao
 
 ## intent:affirm
 - yes
@@ -191,6 +205,10 @@
 - that sounds good
 - correct
 - Okay
+- Great
+- Alright
+- Cool
+- Yeah
 
 ## intent:deny
 - no
@@ -202,6 +220,7 @@
 - Nope
 - Nevermind
 - Nothing
+- exit
 
 ## intent: bot_challenge
 - are you a human?

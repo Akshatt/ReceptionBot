@@ -2,7 +2,7 @@
 * greet
  - utter_greet
  
-## book room path1  
+## greet + book room + happy
 * greet
   - utter_greet
 * book_room
@@ -12,17 +12,8 @@
 * affirm
     - utter_happy
     - utter_goodbye
-
-## book room path2  
-* book_room
-    - room_form
-    - form{"name": "room_form"}
-    - form{"name": null}
-* affirm
-    - utter_happy
-    - utter_goodbye
-
-## book room path3  
+    
+## greet + book room + sad
 * greet
   - utter_greet
 * book_room
@@ -31,6 +22,91 @@
     - form{"name": null}
 * deny
     - utter_again
+* deny
+    - utter_goodbye
+    
+## greet + book room + faq + happy
+* greet
+  - utter_greet
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+    
+## greet + book room + faq + sad
+* greet
+  - utter_greet
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye
+    
+
+## book room + happy  
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+       
+## book room + sad  
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye
+
+## book room + faq + happy
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+    
+## book room + faq + sad
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye
+
+## book room + again + happy  
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
     - room_form
     - form{"name": "room_form"}
     - form{"name": null}
@@ -38,13 +114,140 @@
     - utter_happy
     - utter_goodbye
     
-## Not booking
-* greet
- - utter_greet
+## book room + again + faq + happy  
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
 * deny
- - utter_goodbye
- 
- 
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+        
+    
+## book room + faq + again + happy 
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+
+## book room + faq + again + faq + happy 
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* affirm
+    - utter_happy
+    - utter_goodbye
+
+## book room + again + sad
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye  
+   
+## book room + again + faq + sad
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye     
+    
+## book room + faq + again + sad
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye
+    
+## book room + faq + again + faq + sad
+* book_room
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* affirm
+    - room_form
+    - form{"name": "room_form"}
+* faq
+    - respond_faq
+    - room_form
+    - form{"name": null}
+* deny
+    - utter_again
+* deny
+    - utter_goodbye
+      
 ## schedule cleaning path1 
 * schedule_cleaning
  - utter_ask_time
@@ -68,45 +271,16 @@
 * affirm
  - utter_happy
  - utter_goodbye
- 
-## faqs
+  
+## some faqs
 * faq
+ - respond_faq
+
+## what faqs
+* what_faqs
  - utter_faq
  - utter_faq_options
-
-## faq check in
-* faq_checkin
- - utter_checkin_timings
-
-## faq check out
-* faq_checkout
- - utter_checkout_timings
  
-## faq cancel reservations
-* faq_cancel_reservation
- - utter_cancel_reservation
-
-## faq cancellation policy
-* faq_cancellation_policy
- - utter_cancellation_policy
- 
-## faq restaurant
-* faq_restaurant
- - utter_restaurant
- 
-## faq restaurant timings
-* faq_restaurant_timings
- - utter_restaurant_timings
- 
-## faq breakfast
-* faq_breakfast
- - utter_breakfast
-
-## faq breakfast timings
-* faq_breakfast_timings
- - utter_breakfast_timings
-  
-
 ## say goodbye
 * goodbye
   - utter_goodbye
@@ -114,10 +288,6 @@
 ## exit on denying
 * deny
  - utter_goodbye  
-
-## user asks whats possible
-* ask_whatspossible
-  - utter_explain_whatspossible
 
 ## fallback story
 * bot_challenge
