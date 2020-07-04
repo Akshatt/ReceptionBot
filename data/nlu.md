@@ -54,7 +54,8 @@
 - Book room for [2](people) people
 - Help me book a room for [2](people)   
 - I would like to book a room for [two](people) people
-- book a room for [1](people) 
+- book a room for [1](people)
+- book a room for [one](people) 
 - I want to book a room for [two](people) people
 - Are there any rooms available for [2](people) people
 - I want to book a room for [2](people) people 
@@ -88,6 +89,7 @@
 - What is the standard check-in time?
 - When can i check-in?
 - What are your check-in timings?
+- Checkin
 - Check in 
 - I want to know the check-in timings
 - Check-in timings?
@@ -102,6 +104,7 @@
 - When can i check-out?
 - What are your check-out timings?
 - Check out
+- Checkout
 - I want to know the check-out timings
 - Check-out timings?
 
@@ -168,6 +171,13 @@
 - Breakfast time
 - Breakfast timings
 
+## intent: faq/ask_whatspossible
+- What can you do
+- What services do you provide
+- How can you help me
+- What do you do
+- Your services
+- Your functions
 
 ## intent: what_faqs 
 - Faqs
@@ -179,14 +189,6 @@
 - What FAQs can you answer?
 - What faqs can you handle?
 - List your faqs
-
-## intent: faq/ask_whatspossible
-- What can you do
-- What services do you provide
-- How can you help me
-- What do you do
-- Your services
-- Your functions
 
 ## intent:greet
 - hey
@@ -207,6 +209,8 @@
 - Talk to you later
 - later
 - Ciao
+- It was nice talking to you
+- Good talk
 
 ## intent:affirm
 - yes
@@ -219,6 +223,9 @@
 - Alright
 - Cool
 - Yeah
+- Well alright
+- Well okay
+- Good 
 
 ## intent:deny
 - no
@@ -231,9 +238,12 @@
 - Nevermind
 - Nothing
 - exit
+- Nah
 
 ## intent: bot_challenge
 - are you a human?
 - are you a bot?
 - What is a bot? 
 - What are you?
+- Can I see you?
+- Are you alive?

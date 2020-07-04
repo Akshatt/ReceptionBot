@@ -98,13 +98,13 @@ responses:
     - text: "That's great!"
 
   utter_again:
-    - text: "No problem! Do you want to start over?"
+    - text: "No problem! Do you want to start over again?"
 
   utter_goodbye:
-    - text: "Okay bye!"
+    - text: "Happy to help you\nOkay bye!"
 
   utter_default:
-    - text: "This seems out of scope for me now!\nTry asking something else like book a room, clean my room, faqs, etc"
+    - text: "You've reached the ReceptionBot.\nThis seems out of scope for me now!\nTry asking something else like book a room, clean my room, faqs, etc"
 
 session_config:
   session_expiration_time: 60

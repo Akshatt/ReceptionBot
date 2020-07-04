@@ -1,9 +1,9 @@
 from typing import Any, Text, Dict, List
 
-from rasa_sdk import Action, Tracker
+from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, AllSlotsReset
 
 
 class RoomForm(FormAction):
@@ -15,10 +15,10 @@ class RoomForm(FormAction):
     @staticmethod
     def required_slots(tracker):
         people = tracker.get_slot("people")
+
+        # if people are <= 2, we assume that number of rooms is 1 and only ask for room_type
         if people in ["1", "One", "single", "Single", "one", "2", "Two", "two"]:
-            return [
-                "room_type",
-            ]
+            return ["room_type"]
         else:
             return [
                 "number",
@@ -26,13 +26,10 @@ class RoomForm(FormAction):
             ]
 
     def slot_mappings(self):
-        """A dictionary to map required slots to
-            - an extracted entity
-            - intent: value pairs
-            - a whole message
-            or a list of them, where a first match will be picked"""
-
-        return {"people": self.from_entity(entity="people", intent="book_room")}
+        return {
+            "people": self.from_entity(entity="people",
+                                       intent="book_room")
+        }
 
     def submit(
             self,
@@ -42,6 +39,8 @@ class RoomForm(FormAction):
         ) -> List[Dict]:
 
         people = tracker.get_slot("people")
+
+        # if people are <= 2, we assume that number of rooms is 1
         if people in ["1", "One", "single", "Single", "one", "2", "Two", "two"]:
             number = "1"
         else:
@@ -50,11 +49,11 @@ class RoomForm(FormAction):
 
         msg = "Okay, we got it!\nPlease confirm:\nYou would like to book " + number + " " + room_type + " " + "room"
 
-        # pluralize if rooms are more than one
+        # pluralize 'room' if rooms are more than one
         if number not in ["1", "One", "single", "Single", "one"]:
             msg += "s"
         dispatcher.utter_message(msg)
-        return [SlotSet("number", None), SlotSet("room_type", None), SlotSet("people", None)]
+        return [AllSlotsReset()]
 
 
 class RoomCleaningForm(FormAction):
@@ -65,18 +64,14 @@ class RoomCleaningForm(FormAction):
 
     @staticmethod
     def required_slots(tracker):
-        return [
-                "time",
-            ]
+        return ["time"]
 
     def slot_mappings(self):
-        """A dictionary to map required slots to
-            - an extracted entity
-            - intent: value pairs
-            - a whole message
-            or a list of them, where a first match will be picked"""
-
-        return {"time": self.from_entity(entity="time", intent=["schedule_cleaning", "cleaning_time"])}
+        return {
+            "time": self.from_entity(entity="time",
+                                     intent=["schedule_cleaning", "cleaning_time"]
+                        )
+            }
 
     def submit(
             self,

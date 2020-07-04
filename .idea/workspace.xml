@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
