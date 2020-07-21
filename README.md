@@ -15,6 +15,14 @@ Example flows for these functionalities are described in detail in the [Flows](#
 
 - `python 3.6.8` 
 - `Rasa=1.8` 
+## How to use
+
+1. Clone the repo
+2. Move to that folder
+3. Create a `virtualenv` and install the required versions of rasa and python.
+4. Open the cmd prompt and run `rasa run actions`.
+5. Open another cmd prompt and run `rasa shell`. 
+6. Here you can try out the different stories. 
 
 ## Flows
 
