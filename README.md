@@ -1,5 +1,5 @@
 # ReceptionBot
-We have used the Rasa framework for building this chatbot. 
+This chatbot is built using the Rasa Framework. 
 
 ## Objective - 
 To build a simple chatbot for a hotel.
